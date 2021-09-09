@@ -1,5 +1,4 @@
 pipeline {
-    agent { label 'FlaskApp' }
     options {
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
@@ -10,5 +9,4 @@ pipeline {
             }
         }
     }
-
 }
